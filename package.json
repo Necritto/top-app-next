@@ -1,0 +1,38 @@
+{
+  "name": "top-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint:js": "next lint",
+    "lint:js:fix": "next lint --fix",
+    "lint:css": "stylelint **/*.css",
+    "lint:css:fix": "stylelint **/*.css --fix",
+    "lint": "next lint && npm run lint:css",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "13.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.28.0",
+    "eslint-config-next": "^13.0.4",
+    "husky": "^8.0.2",
+    "stylelint": "^14.15.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^5.0.0"
+  }
+}
