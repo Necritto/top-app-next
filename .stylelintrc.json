@@ -8,6 +8,9 @@
         "stylelint-config-rational-order/plugin"
     ],
     "rules": {
-        "color-hex-case": "upper"
+        "color-hex-case": "upper",
+        "indentation": [ 4, { "baseIndentLevel": 1 } ],
+        "string-quotes": "single",
+        "color-hex-length": "long"
     }
 }
