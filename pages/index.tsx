@@ -1,16 +1,9 @@
-import React, {useState} from 'react';
-import {Rating} from '@/components/UI/Rating';
+import React from 'react';
 
-export default function Home(): React.ReactElement {
-    const [rating, setRating] = useState<number>(4);
+import {withLayout} from '@/hoc/withLayout';
 
-    return (
-        <div>
-            <Rating
-                rating={rating}
-                setRating={setRating}
-                isEditable
-            />
-        </div>
-    );
+function Home(): React.ReactElement {
+    return <>Main</>;
 }
+
+export default withLayout(Home);
