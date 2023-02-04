@@ -1,21 +1,16 @@
-import React from 'react';
-import {Button} from '@/components/UI/Button';
-import {Tag} from '@/components/UI/Tag';
+import React, {useState} from 'react';
+import {Rating} from '@/components/UI/Rating';
 
 export default function Home(): React.ReactElement {
+    const [rating, setRating] = useState<number>(4);
+
     return (
         <div>
-            <Button arrow="right">Hello</Button>
-            <Button appearence="ghost">Hello</Button>
-            <Tag>Ghost</Tag>
-            <Tag size="lg" color="primary">
-                Primary
-            </Tag>
-            <Tag color="red">Red</Tag>
-            <Tag color="grey">Grey</Tag>
-            <Tag color="green" href="/">
-                Green
-            </Tag>
+            <Rating
+                rating={rating}
+                setRating={setRating}
+                isEditable
+            />
         </div>
     );
 }

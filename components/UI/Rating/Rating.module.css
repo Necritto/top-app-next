@@ -1,0 +1,18 @@
+.rating {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star svg {
+    margin-right: 4px;
+    transition: fill 0.3s ease;
+}
+
+.filled svg {
+    fill: var(--primary);
+}
+
+.editable {
+    cursor: pointer;
+}

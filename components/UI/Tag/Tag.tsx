@@ -13,9 +13,16 @@ export default function Tag({
     ...props
 }: TagProps): JSX.Element {
     return (
-        <div className={cn(styles.tag, className, styles[size], styles[color])} {...props}>
+        <div
+            className={cn(styles.tag, className, styles[size], styles[color])}
+            {...props}
+        >
             {href ? (
-                <a href={href} target="_blank" rel="noopener noreferrer">
+                <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {children}
                 </a>
             ) : (
