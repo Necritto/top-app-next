@@ -67,9 +67,13 @@
         "quotes": ["error", "single"],
         "require-jsdoc": "off",
         "space-before-blocks": ["error", "always"],
-        "space-before-function-paren": ["error", "never"],
         "space-in-parens": ["error", "never"],
         "template-curly-spacing": ["error", "never"],
+        "space-before-function-paren": ["error", {
+            "named": "never",
+            "anonymous": "always",
+            "asyncArrow": "always"
+        }],
         "react/jsx-max-props-per-line": [2, {"maximum": 1}]
     }
 }
