@@ -1,3 +1,5 @@
+import {PagesCategory} from './page';
+
 export interface IPageItem {
     alias: string;
     title: string;
@@ -10,4 +12,12 @@ export interface IMenuItem {
         secondCategory: string;
     };
     pages: IPageItem[];
+    wasOpen?: boolean;
+}
+
+export interface FirstLevelMenu {
+    route: string;
+    name: string;
+    icon: JSX.Element;
+    id: PagesCategory;
 }

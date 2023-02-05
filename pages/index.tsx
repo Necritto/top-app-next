@@ -7,13 +7,7 @@ import {MENU} from '@/core/constants/api';
 import {IMenuItem} from '@/core/types/menu';
 
 function Home({menu}: IHomeProps): React.ReactElement {
-    return (
-        <ul>
-            {menu.map((m) => (
-                <li key={m._id.secondCategory}>{m._id.secondCategory}</li>
-            ))}
-        </ul>
-    );
+    return <>Main</>;
 }
 
 export default withLayout(Home);

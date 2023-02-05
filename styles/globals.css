@@ -4,7 +4,6 @@
 
 html,
 body {
-    color: var(--primary);
     font-family: var(--main-font);
     background-color: var(--main-background);
 }

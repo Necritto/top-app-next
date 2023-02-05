@@ -1,3 +1,9 @@
 .sidebar {
-    background-color: rgb(44, 202, 13);
+    display: grid;
+    gap: 20px;
+    align-content: start;
+}
+
+.logo {
+    margin-top: 32px;
 }
