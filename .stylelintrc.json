@@ -1,16 +1,16 @@
 {
-    "extends": [
-        "stylelint-config-standard",
-        "stylelint-config-rational-order"
-    ],
-    "plugins": [
-        "stylelint-order",
-        "stylelint-config-rational-order/plugin"
-    ],
+    "extends": ["stylelint-config-standard", "stylelint-config-rational-order"],
+    "plugins": ["stylelint-order", "stylelint-config-rational-order/plugin"],
     "rules": {
         "color-hex-case": "upper",
-        "indentation": [ 4, { "baseIndentLevel": 1 } ],
+        "indentation": [4, {"baseIndentLevel": 1}],
         "string-quotes": "single",
-        "color-hex-length": "long"
+        "color-hex-length": "long",
+        "color-function-notation": "legacy",
+        "declaration-block-no-redundant-longhand-properties": [true, {"ignoreShorthands": ["/grid-template/"]}],
+        "selector-class-pattern": [
+            "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+            {"resolveNestedSelectors": true}
+        ]
     }
 }

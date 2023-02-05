@@ -14,7 +14,8 @@ export default function Button({
     ...props
 }: ButtonProps): JSX.Element {
     return (
-        <button className={cn(styles.button, className, styles[appearence])} {...props}>
+        <button className={cn(styles.button, className, styles[appearence])}
+            {...props}>
             {children}
             {arrow && <ArrowSvg className={cn(styles.arrow, styles[arrow])} />}
         </button>

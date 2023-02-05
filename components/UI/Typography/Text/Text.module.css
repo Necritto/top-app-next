@@ -1,0 +1,17 @@
+.text {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.sm {
+    font-size: 14px;
+}
+
+.md {
+    font-size: 16px;
+}
+
+.lg {
+    font-size: 18px;
+    line-height: 1.3;
+}

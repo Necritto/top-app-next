@@ -1,0 +1,79 @@
+.first-level__item {
+    width: max-content;
+}
+
+.first-level__item:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+.first-level__link {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 20px;
+    align-items: center;
+    color: var(--grey-text);
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.first-level__item svg {
+    transition: fill 0.3s ease;
+}
+
+.first-level__item.active .first-level__link,
+.first-level__item:hover .first-level__link {
+    color: var(--primary);
+}
+
+.first-level__item.active svg,
+.first-level__item:hover svg {
+    fill: var(--primary);
+}
+
+.second-level {
+    margin: 16px 0 20px 12px;
+    padding-left: 32px;
+    border-left: 1px solid var(--grey);
+}
+
+.second-level__item {
+    width: max-content;
+    margin-bottom: 4px;
+}
+
+.second-level__text {
+    color: var(--grey-text);
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.third-level {
+    display: none;
+    margin: 12px 0 20px;
+}
+
+.third-level.opened {
+    display: block;
+}
+
+.third-level__item {
+    display: block;
+    width: max-content;
+    color: var(--grey-text);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.third-level__item:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+
+.third-level__item.active,
+.third-level__item:hover {
+    color: var(--primary);
+}
